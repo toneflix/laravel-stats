@@ -1,0 +1,67 @@
+{
+    "name": "toneflix-code/laravel-stats",
+    "description": "A simple Laravel package to help you quickly get usage metrics and data from your app.",
+    "keywords": [
+        "Stats",
+        "Metrics",
+        "Legacy",
+        "laravel",
+        "laravel-stats"
+    ],
+    "homepage": "https://github.com/toneflix-code/laravel-stats",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Legacy",
+            "email": "legacy@toneflix.com.ng",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1|^8.2",
+        "illuminate/support": "^9.0|^10.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "fakerphp/faker": "^1.21",
+        "illuminate/contracts": "^9.0|^10.0",
+        "orchestra/testbench": "^8.8",
+        "pestphp/pest": "^2.33",
+        "pestphp/pest-plugin-laravel": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ToneflixCode\\Stats\\": "src/",
+            "ToneflixCode\\Stats\\Tests\\Database\\Factories\\": "tests/database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ToneflixCode\\Stats\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "pint": "vendor/bin/pint",
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/pint",
+        "test-coverage": "vendor/bin/pest --coverage"
+
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ToneflixCode\\Stats\\LaravelStatsServiceProvider"
+            ],
+            "aliases": {
+                "KudiNotification": "ToneflixCode\\Stats\\LaravelStatsServiceProvider\\Facades\\LaravelStats"
+            }
+        }
+    }
+}
