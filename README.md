@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/toneflix-code/laravel-stats.svg?style=flat-square)](https://packagist.org/packages/toneflix-code/laravel-stats)
 [![Total Downloads](https://img.shields.io/packagist/dt/toneflix-code/laravel-stats.svg?style=flat-square)](https://packagist.org/packages/toneflix-code/laravel-stats)
-![GitHub Actions](https://github.com/toneflix-code/laravel-stats/actions/workflows/main.yml/badge.svg)
+![GitHub Actions](https://github.com/toneflix/laravel-stats/actions/workflows/main.yml/badge.svg)
 
 A simple Laravel package to help you quickly get usage metrics and data from your app.
 
